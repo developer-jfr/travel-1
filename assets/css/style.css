@@ -56,9 +56,19 @@
 }
 
 .home-timeline {
-  padding-inline: 8%;
+  padding-inline: 5%;
 }
 
+
+.home-timeline-wrapp::after {
+  content: '';
+  position: absolute;
+  top: 142%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.1);
+}
 
 .home-timeline-item {
   width: 45px;
@@ -70,6 +80,33 @@
   border-radius: 6px;
   backdrop-filter: blur(14px);
   transform: rotate(45deg);
+  z-index: 111;
+  position: relative;
+}
+
+.home-timeline-item span::after {
+  content: '';
+  position: absolute;
+  top: 90px;
+  left: 2px;
+  width: 8px;
+  height: 8px;
+  background: #0D8A9B;
+  border-radius: 50%;
+}
+
+.home-item {
+  position: relative;
+}
+
+.home-item::after {
+  content: '';
+  position: absolute;
+  top: 71px;
+  left: 22px;
+  height: 50px;
+  width: 1px;
+  background: rgba(255, 255, 255, 0.12);
 }
 
 .home-tm-content {
@@ -86,16 +123,16 @@
 
 .home-tm-content p {
   font-size: 20px;
-line-height: 25px;
+  line-height: 25px;
 
-color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.4);
 }
 
 .home-timeline-item span {
   transform: rotate(312.9deg);
-    font-size: 20px;
-    color: #fff;
-    font-weight: 500;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 500;
 }
 
 /* --------------- Navbar ---------------------  */
@@ -123,9 +160,9 @@ color: rgba(255, 255, 255, 0.4);
   height: 281px;
 }
 
-.swiper-scrollbar-drag  {
+.swiper-scrollbar-drag {
   border-radius: 0;
-   background: #2B2B2B !important;
+  background: #2B2B2B !important;
 }
 
 .sw-count {
@@ -137,15 +174,15 @@ color: rgba(255, 255, 255, 0.4);
 
 .sw-scroll-tx {
   width: fit-content;
-    position: absolute;
-    top: 80%;
-    left: 45%;
-    z-index: 999;
+  position: absolute;
+  top: 80%;
+  left: 45%;
+  z-index: 999;
 }
 
 .sw-custom-scrollbar {
   height: 5px;
-  width: 150px  !important;
+  width: 150px !important;
   border-radius: 0;
 }
 

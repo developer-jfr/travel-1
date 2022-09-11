@@ -1,4 +1,4 @@
-/*==================== SWIPER  ====================*/
+/*==================== First  Swiper On Landing Page  ====================*/
 let swiper = new Swiper(".slider-1", {
   slidesPerView: 2.5,
   draggables: true,
@@ -14,9 +14,22 @@ let swiper = new Swiper(".slider-1", {
   },
 });
 
+/*==================== Second Swiper On Landing Page  ====================*/
+
+let secondLandSwiper = new Swiper(".slider-landing", {
+  slidesPerView: 5,
+  spaceBetween: 50,
+  navigation: {
+    nextEl: ".button-next",
+    prevEl: ".button-prev",
+  },
+  watchOverflow: true
+});
+
+/* ==================== Inspired =====================  */
+
 let secondSwiper = new Swiper(".slider-2", {
   slidesPerView: 1,
-  draggable: true,
   spaceBetween: 0,
   navigation: {
     nextEl: ".button-next-test",
@@ -35,6 +48,7 @@ let secondSwiper = new Swiper(".slider-2", {
   },
 });
 
+/* ======================  Get Inspired =============== */
 
 let thirdSwiper = new Swiper(".slider-3", {
   slidesPerView: 2,
