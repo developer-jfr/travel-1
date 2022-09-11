@@ -81,7 +81,7 @@
 
 .swiper-scrollbar-drag  {
   border-radius: 0;
-   color: #2B2B2B !important;
+   background: #2B2B2B !important;
 }
 
 .sw-count {
@@ -371,4 +371,50 @@
 .inspired {
   padding-top: 100px;
   padding-inline: 5%;
+}
+
+
+/* ------------------- Footer ------------------------------  */
+
+.footer {
+  background-image: url('./../images/footer-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 400px;
+  color: #fff;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 5%;
+}
+
+.footer-item {
+  display: flex;
+  gap: 10px;
+  padding-top: 10px;
+}
+
+.footer-copyright {
+  margin-top: 100px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.footer-anchors p {
+  position: relative;
+}
+
+.footer-anchors p::before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: -8px;
+  height: 55%;
+  width: 2px;
+  background: #69A1B6;
 }
