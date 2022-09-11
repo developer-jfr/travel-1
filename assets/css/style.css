@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+
+}
+
+/* -------------------- Common Styles ---------------------------- */
+
+.overflow-img {
+  overflow: hidden;
+}
+
+.overflow-zoom {
+  transition: .3s ease-in-out;
+}
+
+.overflow-zoom:hover {
+  transform: scale(1.1);
+}
+
+/* ----------------------------- Custom Scrollbar ----------------------- */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+/* ---------------- Home ---------------------------- */
+
+.home {
+  background-image: url('./../images/landing-bg.png');
+  padding-bottom: 80px;
+}
+
+.home-title {
+  text-transform: uppercase;
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 55px;
+  color: #fff;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* --------------- Navbar ---------------------  */
+
+.nav-item {
+  position: relative;
+  transition: .5s ease-in-out;
+}
+
+.nav-item:hover::after {
+  content: "";
+  position: absolute;
+  background: #0D8A9B;
+  height: 2px;
+  width: 70%;
+  left: 15%;
+  bottom: 0;
+  z-index: 999;
+}
+
+/* ---------------------- Swiper ------------------ */
+
+.swiper-slide img {
+  width: 200px;
+}
+
+.swiper-scrollbar-drag  {
+   color: #2B2B2B !important;
+}
+
+.sw-count {
+  width: auto;
+  position: relative;
+  bottom: 0;
+  padding-inline: 30px;
+}
+
+/* ----------------------- Location --------------------- */
+
+.location {
+  background: #01171B;
+  padding-top: 50px;
+}
+
+.location-fs-img {
+  width: 12%;
+  transform: rotate(2deg);
+  margin-left: -10px;
+}
+
+.location-sc-img {
+  width: 40%;
+  height: 40%;
+}
+
+.location-map-img {
+  padding-top: 40px;
+  width: 90%;
+}
+
+.location-content {
+  padding-left: 40px;
+}
+
+.location-content h2 {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.4);
+  letter-spacing: 0.06em;
+}
+
+.location-content span {
+  font-size: 48px;
+  color: #0D8A9B;
+  line-height: 60px;
+  font-weight: 600;
+}
+
+
+.location-description {
+  font-size: 24px;
+  line-height: 30px;
+  padding-top: 30px;
+  color: rgba(255, 255, 255, 0.4);
+  font-weight: 300;
+  padding-right: 10%;
+}
+
+/* -------------------------- Stories --------------------------- */
+
+
+.stories-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "first content  second"
+  ;
+}
+
+.stories-info {
+  padding-top: 50px;
+  grid-area: content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+}
+
+
+.stories-fs-image {
+  grid-area: first;
+  width: 80%;
+}
+
+
+.stories-sc-image {
+  grid-area: second;
+  margin-top: -120px;
+  width: 100%;
+  height: 80%;
+  padding-left: 70px;
+}
+
+.st-btn {
+  background: #0D8A9B;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 10px 35px;
+  transition: .3s ease-in-out;
+}
+
+.st-btn:hover {
+  background: #034b55;
+}
+
+/* -------------------------- Adventure --------------------------  */
+
+.adventure-content {
+  display: flex;
+  gap: 50px;
+}
+
+.adventure-fs-image {
+  width: 30%;
+}
+
+.adventure-sc-image {
+  width: 14%;
+  height: 30%;
+  padding-top: 20%;
+  margin-right: 50px;
+}
+
+.adventure-info span {
+  padding-top: 10px;
+  font-size: 18px;
+  line-height: 25px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.adventure-info h3 {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
+  padding-block: 10px;
+  color: #2B2B2B;
+}
+
+.adventure-info p {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+
+  color: rgba(0, 0, 0, 0.5);
+}
+
+
+/* ----------------------------- Tours ----------------------------------  */
+
+
+.tours-card {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.tours {
+  padding-inline: 5%;
+}
+
+.tours-info {
+  padding-top: 50%;
+}
+
+.tours-info span {
+  font-size: 18px;
+  line-height: 25px;
+
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.tours-info h2 {
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 60px;
+  padding-bottom: 5px;
+  color: #2B2B2B;
+}
+
+.tours-info p {
+  font-size: 20px;
+  line-height: 30px;
+
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.tours-fs-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 25px;
+  grid-template-areas:
+    "contentFs firstImg secondImg thirdImg"
+  ;
+}
+
+.tours-sc-section {
+  padding-top: 30px;
+  display: grid;
+  gap: 35px;
+  grid-template-columns: 2fr 1fr 1fr;
+}
+
+.tours-big {
+  width: 100% !important;
+}
+
+.tours-data {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1rem;
+}
+
+
+.tours-title,
+.tours-description {
+  color: #fff;
+}
+
+
+.tours-title {
+  font-size: 1.25rem;
+  margin-bottom: .25rem;
+}
+
+.tours-description {
+  display: block;
+  font-size: .75rem;
+}
+
+.tours-img {
+  transition: .3s;
+}
+
+.tours-img:hover {
+  transform: scale(1.1);
+}
+
+
+/* -------------------- Testimonials ----------------------- */
+
+.testimonials {
+  padding-inline: 5%;
+  padding-top: 90px;
+}
+
+
+.testimonials-info span {
+  line-height: 25px;
+
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.testimonials-info h2 {
+  padding-block: 5px;
+}
+
+.testimonials-info p {
+  line-height: 30px;
+width: 50%;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+
+
