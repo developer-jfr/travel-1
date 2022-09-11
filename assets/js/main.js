@@ -34,3 +34,14 @@ let secondSwiper = new Swiper(".slider-2", {
     },
   },
 });
+
+
+let thirdSwiper = new Swiper(".slider-3", {
+  slidesPerView: 2,
+  draggable: true,
+  spaceBetween: 50,
+  scrollbar: {
+    el: ".swiper-scrollbar",
+    draggable: true,
+  }
+});

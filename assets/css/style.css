@@ -80,6 +80,7 @@
 }
 
 .swiper-scrollbar-drag  {
+  border-radius: 0;
    color: #2B2B2B !important;
 }
 
@@ -96,6 +97,12 @@
     top: 80%;
     left: 45%;
     z-index: 999;
+}
+
+.sw-custom-scrollbar {
+  height: 5px;
+  width: 150px  !important;
+  border-radius: 0;
 }
 
 /* ----------------------- Location --------------------- */
@@ -337,6 +344,7 @@
 .testimonials {
   padding-inline: 5%;
   padding-top: 90px;
+  padding-bottom: 50px;
 }
 
 
@@ -352,9 +360,15 @@
 
 .testimonials-info p {
   line-height: 30px;
-width: 50%;
+  width: 50%;
   color: rgba(0, 0, 0, 0.5);
 }
 
 
 
+/* -------------------------- Inspired ----------------------------- */
+
+.inspired {
+  padding-top: 100px;
+  padding-inline: 5%;
+}
