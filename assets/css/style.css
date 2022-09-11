@@ -90,6 +90,14 @@
   padding-inline: 30px;
 }
 
+.sw-scroll-tx {
+  width: fit-content;
+    position: absolute;
+    top: 80%;
+    left: 45%;
+    z-index: 999;
+}
+
 /* ----------------------- Location --------------------- */
 
 .location {
