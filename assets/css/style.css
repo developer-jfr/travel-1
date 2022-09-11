@@ -55,6 +55,49 @@
   white-space: nowrap;
 }
 
+.home-timeline {
+  padding-inline: 8%;
+}
+
+
+.home-timeline-item {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(13, 138, 155, 0.5);
+  border-radius: 6px;
+  backdrop-filter: blur(14px);
+  transform: rotate(45deg);
+}
+
+.home-tm-content {
+  padding-left: 30px;
+  margin-top: 10px;
+}
+
+.home-tm-content h2 {
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.home-tm-content p {
+  font-size: 20px;
+line-height: 25px;
+
+color: rgba(255, 255, 255, 0.4);
+}
+
+.home-timeline-item span {
+  transform: rotate(312.9deg);
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+}
+
 /* --------------- Navbar ---------------------  */
 
 .nav-item {
@@ -77,6 +120,7 @@
 
 .swiper-slide img {
   width: 200px;
+  height: 281px;
 }
 
 .swiper-scrollbar-drag  {
@@ -373,6 +417,11 @@
   padding-inline: 5%;
 }
 
+
+.inspired-item {
+  width: 100%;
+  height: 100%;
+}
 
 /* ------------------- Footer ------------------------------  */
 
