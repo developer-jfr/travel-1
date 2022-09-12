@@ -3,7 +3,7 @@ let swiper = new Swiper(".slider-1", {
   slidesPerView: 2.5,
   draggables: true,
   loop: true,
-  spaceBetween: 0,
+  spaceBetween: 20,
   navigation: {
     nextEl: ".button-next",
     prevEl: ".button-prev",
@@ -20,8 +20,8 @@ let secondLandSwiper = new Swiper(".slider-landing", {
   slidesPerView: 5,
   spaceBetween: 50,
   navigation: {
-    nextEl: ".button-next",
-    prevEl: ".button-prev",
+    nextEl: ".button-next-ln",
+    prevEl: ".button-prev-ln",
   },
   watchOverflow: true
 });
