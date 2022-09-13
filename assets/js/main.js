@@ -1,17 +1,39 @@
+// ======================== Navbar On Scroll ======================
+
+window.addEventListener('scroll', function() {
+  let header = document.querySelector('.navbar');
+  header.classList.toggle('nav-scroll', window.scrollY > 5)
+})
+
+
 /*==================== First  Swiper On Landing Page  ====================*/
 let swiper = new Swiper(".slider-1", {
   slidesPerView: 2.5,
-  draggables: true,
   loop: true,
   spaceBetween: 20,
   navigation: {
     nextEl: ".button-next",
     prevEl: ".button-prev",
   },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  },
+  breakpoints: {
+    1000: {
+      slidesPerView: 2.5,
+    },
+    700: {
+      slidesPerView: 3
+    },
+    400: {
+      slidesPerView: 3
+    }
+  },
   scrollbar: {
     el: ".swiper-scrollbar",
     draggable: true,
-  },
+  }
 });
 
 /*==================== Second Swiper On Landing Page  ====================*/
@@ -22,6 +44,21 @@ let secondLandSwiper = new Swiper(".slider-landing", {
   navigation: {
     nextEl: ".button-next-ln",
     prevEl: ".button-prev-ln",
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  },
+  breakpoints: {
+    1000: {
+      slidesPerView: 4,
+    },
+    700: {
+      slidesPerView: 3
+    },
+    300: {
+      slidesPerView: 3
+    },
   },
   watchOverflow: true
 });
@@ -57,5 +94,13 @@ let thirdSwiper = new Swiper(".slider-3", {
   scrollbar: {
     el: ".swiper-scrollbar",
     draggable: true,
-  }
+  },
+  breakpoints: {
+    500: {
+      slidesPerView: 2
+    },
+    300: {
+      slidesPerView: 1.2
+    },
+  },
 });
