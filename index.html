@@ -35,16 +35,16 @@
                         <a class="nav-link text-white" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Destination</a>
+                        <a class="nav-link text-white" href="#destination">Destination</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Travel Styles</a>
+                        <a class="nav-link text-white" href="#style">Travel Styles</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">About Us</a>
+                        <a class="nav-link text-white" href="#about-us">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Contact Us</a>
+                        <a class="nav-link text-white" href="#contact">Contact Us</a>
                     </li>
                 </ul>
             </div>
@@ -71,20 +71,20 @@
 
                     <!--==================== Element 2 ====================-->
                     <div class=" swiper-slide ln-slider">
-                        <div class="text-white mb-2">Sydney-1</div>
-                        <img src="assets/images/slider-1.png" alt="" class="ln-slider-img">
+                        <div class="text-white mb-2">Sydney</div>
+                        <img src="assets/images/slider-2.png" alt="" class="ln-slider-img">
                     </div>
 
                     <!--==================== Element 3 ====================-->
                     <div class=" swiper-slide ln-slider">
                         <div class="text-white mb-2">Sydney</div>
-                        <img src="assets/images/slider-1.png" alt="" class="ln-slider-img">
+                        <img src="assets/images/slider-3.png" alt="" class="ln-slider-img">
                     </div>
 
                     <!--==================== Element 4 ====================-->
                     <div class=" swiper-slide ln-slider">
                         <div class="text-white mb-2">Sydney</div>
-                        <img src="assets/images/slider-1.png" alt="" class="ln-slider-img">
+                        <img src="assets/images/slider-2.png" alt="" class="ln-slider-img">
                     </div>
                 </div>
                 <div class="pt-4">
@@ -206,7 +206,7 @@
     <!-------------------------------   Location     ----------------------------------->
 
     <section class="location">
-        <div class="d-flex location-info">
+        <div class="d-flex location-info position-relative">
             <img class="location-fs-img " src="./assets/images/australia-2.svg" alt="australia-2">
             <div class="location-content">
                 <h2>AUSTRALASIA</h2>
@@ -230,16 +230,18 @@
                     <img class="location-map-img" src="./assets/images/map.svg" alt="map">
                 </div>
             </div>
-            <img class="location-sc-img" src="./assets/images/australia.png" alt="australia">
+            <div class="location-sc-wrapp">
+                <img class="location-sc-img" src="./assets/images/australia.png" alt="australia">
+            </div>
         </div>
     </section>
 
 
     <!-------------------------------   Stories     ----------------------------------->
 
-    <section class="stories">
+    <section id="about-us" class="stories">
         <div class="stories-content">
-            <div class="overflow-img">
+            <div class="overflow-img stories-mobile-1">
                 <img class="stories-fs-image overflow-zoom" src="./assets/images/stories-1.png" alt="stories-1">
             </div>
             <div class="stories-info position-relative">
@@ -264,7 +266,9 @@
                         simple “g’day”, you’ll be warmly welcomed here.
                     </p>
                 </div>
+               <div class="st-btn-wrapp">
                 <button class="st-btn">Explore Now</button>
+               </div>
             </div>
             <img class="stories-sc-image" src="./assets/images/stories-2.png" alt="stories-2">
         </div>
@@ -273,7 +277,7 @@
     <!-------------------------------   Adventure     ----------------------------------->
 
 
-    <section class="adventure pt-5 mt-5">
+    <section id="destination" class="adventure pt-5 mt-5">
         <div class="adventure-content position-relative">
             <img class="adventure-fs-image" src="./assets/images/adventure-1.png" alt="adventure-1">
             <div class="adventure-info position-relative">
@@ -295,7 +299,7 @@
 
     <!-------------------------------   Tours     ----------------------------------->
 
-    <section class="tours pt-5 mt-5 position-relative">
+    <section id="style" class="tours pt-5 mt-5 position-relative">
         <div>
             <div class="tours-fs-section">
                 <div class="tours-info">
@@ -372,7 +376,7 @@
                             <span>TESTIMONIALS</span>
                             <h2>Get Inspired</h2>
                         </div>
-                        <img style="width: 40%;" src="./assets/images/testimonials-1.png" alt="testimonials-1">
+                        <img class="testimonials-img" src="./assets/images/testimonials-1.png" alt="testimonials-1">
                         <div class="ps-5 pt-3 testimonials-info">
                             <div>
                                 <span>TESTIMONIALS</span>
@@ -389,7 +393,7 @@
                             <span>TESTIMONIALS</span>
                             <h2>Get Inspired</h2>
                         </div>
-                        <img style="width: 40%;" src="./assets/images/testimonials-1.png" alt="testimonials-1">
+                        <img class="testimonials-img"  src="./assets/images/testimonials-1.png" alt="testimonials-1">
                         <div class="ps-5 pt-3 testimonials-info">
                             <div>
                                 <span>TESTIMONIALS</span>
@@ -408,10 +412,12 @@
                                 <h2>Get Inspired</h2>
                             </div>
                         </div>
-                        <img style="width: 40%;" src="./assets/images/testimonials-1.png" alt="testimonials-1">
+                        <img class="testimonials-img"  src="./assets/images/testimonials-1.png" alt="testimonials-1">
                         <div class="ps-5 pt-3 testimonials-info">
-                            <span>TESTIMONIALS</span>
-                            <h2>Get Inspired</h2>
+                            <div>
+                                <span>TESTIMONIALS</span>
+                                <h2>Get Inspired</h2>
+                            </div>
                             <p>New Zealand, Australia and a sprinkling of Polynesian islands in the Pacific between them
                                 are incredible settings for an adventure. Outback deserts, rainbow coral playgrounds,
                                 alpine mountains.</p>
@@ -421,7 +427,7 @@
                 </div>
 
                 <div class="d-flex align-items-center sw-scroll-tx">
-                    <img class="button-prev-test mobile-left-arrow" src="./assets/images/arrow-bl-left.svg" alt="arrow-bl-left">
+                    <img class="button-prev-test mobile-left-arrow " src="./assets/images/arrow-bl-left.svg" alt="arrow-bl-left">
                     <div class="d-flex align-items-center">
                         <div class="swiper-scrollbar" style="width: 150px; height: 5px;"></div>
                     <div class="swiper-pagination sw-count"></div>
@@ -448,22 +454,22 @@
                 <!--==================== Element 1 ====================-->
                 <div class="swiper-slide d-flex flex-column">
                     <img style="width: 100%; height: 100%;" src="./assets/images/inspired-1.png" alt="inspired-1">
-                    <h2>Get Inspired</h2>
+                    <h2 class="pt-3">Get Inspired</h2>
                 </div>
                 <!--==================== Element 2 ====================-->
                 <div class="swiper-slide d-flex flex-column">
                     <img style="width: 100%; height: 100%;" src="./assets/images/inspired-2.png" alt="inspired-2">
-                    <h2>Get Inspired</h2>
+                    <h2 class="pt-3">Get Inspired</h2>
                 </div>
                 <!--==================== Element 3 ====================-->
                 <div class="swiper-slide d-flex flex-column">
                     <img style="width: 100%; height: 100%;" src="./assets/images/inspired-1.png" alt="inspired-1">
-                    <h2>Get Inspired</h2>
+                    <h2 class="pt-3">Get Inspired</h2>
                 </div>
                 <!--==================== Element 4 ====================-->
                 <div class="swiper-slide d-flex flex-column">
                     <img style="width: 100%; height: 100%;" src="./assets/images/inspired-2.png" alt="inspired-2">
-                    <h2>Get Inspired</h2>
+                    <h2 class="pt-3">Get Inspired</h2>
                 </div>
             </div>
             <div class="d-flex justify-content-end pb-5">
@@ -475,7 +481,7 @@
 
     <!-------------------------------   Footer    ----------------------------------->
 
-    <footer class="footer">
+    <footer id="contact" class="footer">
         <div class="footer-content">
             <div class="footer-location">
                 <img class="footer-logo" src="./assets/images/logo.svg" alt="logo">

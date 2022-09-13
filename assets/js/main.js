@@ -1,3 +1,13 @@
+// ==================== Navbar Toogler =====================
+
+let navbarToogler = document.querySelector('.navbar-toggler');
+let navbar = document.querySelector('.navbar');
+
+navbarToogler.addEventListener('click', function() {
+   navbar.classList.toggle('bg-black-back')
+})
+
+
 // ======================== Navbar On Scroll ======================
 
 window.addEventListener('scroll', function() {
@@ -10,7 +20,7 @@ window.addEventListener('scroll', function() {
 let swiper = new Swiper(".slider-1", {
   slidesPerView: 2.5,
   loop: true,
-  spaceBetween: 20,
+  spaceBetween: 100,
   navigation: {
     nextEl: ".button-next",
     prevEl: ".button-prev",
@@ -20,15 +30,19 @@ let swiper = new Swiper(".slider-1", {
     clickable: true
   },
   breakpoints: {
-    1000: {
+    
+    300: {
       slidesPerView: 2.5,
+      centeredSlides: true,
+      spaceBetween: 100,
     },
     700: {
       slidesPerView: 3
     },
-    400: {
-      slidesPerView: 3
+    1000: {
+      slidesPerView: 2.5,
     }
+    
   },
   scrollbar: {
     el: ".swiper-scrollbar",
@@ -54,13 +68,12 @@ let secondLandSwiper = new Swiper(".slider-landing", {
       slidesPerView: 4,
     },
     700: {
-      slidesPerView: 3
+      slidesPerView: 2
     },
     300: {
-      slidesPerView: 3
+      slidesPerView: 2
     },
-  },
-  watchOverflow: true
+  }
 });
 
 /* ==================== Inspired =====================  */
