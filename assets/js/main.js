@@ -21,6 +21,9 @@ let swiper = new Swiper(".slider-1", {
   slidesPerView: 2.5,
   loop: true,
   spaceBetween: 100,
+  autoplay: {
+    delay: 5000,
+  },
   navigation: {
     nextEl: ".button-next",
     prevEl: ".button-prev",
