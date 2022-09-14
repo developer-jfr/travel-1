@@ -15,14 +15,16 @@
 
 .overflow-img {
   overflow: hidden;
+  position: relative;
+  cursor: pointer;
 }
 
 .overflow-zoom {
-  transition: .3s ease-in-out;
+  transition: .3s;
 }
 
 .overflow-zoom:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .bg-black-back {
