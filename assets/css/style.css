@@ -1025,7 +1025,7 @@ a {
     background: transparent;
   }
 
-  .sw-miles {
+  .sw-miles::after {
     display: none;
   }
 
