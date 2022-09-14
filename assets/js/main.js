@@ -68,7 +68,7 @@ let secondLandSwiper = new Swiper(".slider-landing", {
       slidesPerView: 4,
     },
     700: {
-      slidesPerView: 2
+      slidesPerView: 3
     },
     300: {
       slidesPerView: 2
