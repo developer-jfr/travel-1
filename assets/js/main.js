@@ -67,15 +67,17 @@ let secondLandSwiper = new Swiper(".slider-landing", {
     clickable: true
   },
   breakpoints: {
-    1000: {
-      slidesPerView: 4,
-    },
+    300: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    }
+    ,
     700: {
       slidesPerView: 3
     },
-    300: {
-      slidesPerView: 2
-    },
+    1000: {
+      slidesPerView: 4,
+    }
   }
 });
 
